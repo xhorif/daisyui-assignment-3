@@ -37,86 +37,111 @@ tailwind.config = {
 }
 </script>
 </head>
-<body class="font-manrope">
+<body class="font-manrope bg-white">
     <!-- header section -->
-     <header class="bg-gradient-to-t from-blue-200 to-blue-100 y-screen mb-20 my-20 h-auto">
+     <header class="bg-gradient-to-t from-blue-200 to-blue-100 y-screen mb-20 my-20 h-auto ">
         <!-- navbar -->
         <div class="text-center ">
             <h3 class=" p-5">THEME</h3>
             <input type="checkbox" value="synthwave" class="toggle theme-controller" />
         </div>
-<nav>
-    <div class="navbar ">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
+        <!-- nav -->
+
+        <nav>
+          <div class="navbar">
+            
+            <!-- Navbar Start -->
+            <div class="navbar-start">
+              <div class="dropdown">
+                <!-- Dropdown Toggle Button -->
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+        
+                <!-- Dropdown Menu Items -->
+                <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 lg:hidden">
+                  <li><a class="text-blacky font-medium">Home</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact Us</a></li>
+                  <li><a>Services</a></li>
+                </ul>
+              </div>
+        
+              <!-- Logo -->
+              <a class="btn btn-ghost text-xl text-blacky font-bold text-3xl">
+                <svg class="w-4 h-4 ml-2 transform rotate-180 text-blacky bg-primary rounded-box text-3xl"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 7l-10 10m0-4v4h4" />
+                </svg>
+                Rinterio
+              </a>
             </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <li><a class="text-blacky font-medium">Home</a></li>
-             
-              <li><a>Services</a></li>
-             
-              <li><a>Portfolio</a></li>
-             
-              <li><a>Blogs</a></li>
-             
-              <li><a>Contact Us</a></li>
-            </ul>
+        
+            <!-- Navbar Center for Larger Screens -->
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="text-blacky font-medium">Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+        
+            <!-- Navbar End for Larger Screens -->
+            <div class="navbar-end hidden lg:flex space-x-6">
+              <i class="p-2 bg-white text-3xl rounded-full fa-brands fa-searchengin"></i>
+              <i class="p-2 bg-white text-3xl rounded-full fa-solid fa-cart-shopping"></i>
+              <a class="btn bg-primary font-bold">
+                Book Consult
+                <svg class="w-4 h-4 ml-2 transform rotate-180 text-white bg-black rounded-box text-3xl"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 7l-10 10m0-4v4h4" />
+                </svg>
+              </a>
+            </div>
           </div>
-          <a class="btn btn-ghost text-xl text-blacky font-bold text-3xl"><svg class="w-4 h-4 ml-2 transform rotate-180 text-blacky bg-primary rounded-box text-3xl" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 7l-10 10m0-4v4h4" />
-          </svg> Rinterio</a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a class="text-blacky font-medium">Home</a></li>
-            <li><a>Services</a></li>
-            <li><a>Portfolio</a></li>
-            <li><a>Blogs</a></li>
-         
-            <li><a>Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="navbar-end hidden lg:flex space-x-6">
-          <i class=" p-2 bg-white text-3xl rounded-full fa-brands fa-searchengin"></i>
-          <i class="p-2 bg-white text-3xl rounded-full  fa-solid fa-cart-shopping"></i>
-          <a class="btn bg-primary font-bold">
-            Book Consult<svg class="w-4 h-4 ml-2 transform rotate-180 text-white bg-black rounded-box text-3xl" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 7l-10 10m0-4v4h4" />
-            </svg> </a>
-        </div>
-      </div>
-</nav>
+        </nav>
+
+
+
+
 <div class="flex flex-col items-center justify-center h-screen text-center">
   <img src="assets/banner.png" alt="" class="mb-6 w-3/6 h-auto">
   <h1 class="text-3xl font-bold mb-4 text-blacky">A barn house of this design has a <br> striking appearance</h1>
   <p class="text-lg mb-6 text-grayy">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
   <button class="px-6 py-3 bg-primary text-black font-medium rounded-lg">Your Button Text<i class="fa-solid fa-arrow-right -rotate-45 bg-green-300 p-2 rounded-full"></i> </button>
+<br>
+<br>
 </div>
      </header>
      <!-- main section -->
       <main class="bg-[#F4F4F4]">
     <!-- 1st banner main  -->
-<section class=" flex-row mx-auto   lg:flex justify-center mb-28">
+<section class=" flex-row mx-auto   lg:flex justify-center mb-28 space-x-4 ">
   <!-- text div -->
 <div class=" ">
   <!-- 1st text -->
-<div class=" lg:my-10 text-start">
-  <img src="assets/Vector.png" class=" sm:mx-auto " alt="">
+<div class=" lg:my-10 text-start ">
+  <img src="assets/Vector.png" class="  lg:block sm:hidden" alt="">
   <div><h3 class="font-bold bg-gray-100 px-4 py-2 rounded-full w-32 "><i class="fa-solid fa-arrow-right  "></i>  About Us </h3> </div>
  
   <h1 class="font-bold text-blacky text-4xl m-3"> We design thoughtful,<br> liveable spaces</h1>
@@ -198,7 +223,61 @@ tailwind.config = {
 </div>
 
 <!-- challenging section -->
+<section class="bg-white">
+<!-- text div -->
+<div class="text-center space-y-6 ">
+  <h3 class=" rounded-xl text-center m-auto bg-green-200 w-60 p-2"> <i class="fa-solid fa-arrow-right"></i> Explore our Latest works</h3>
+  <h1 class=" mx-auto font-bold text-4xl text-blacky">Our Latest Portfolio</h1>
+  <p class="mx-auto text-grayy">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+</div>
+<!-- box img div -->
 
+<div class="grid grid-cols-1 md:grid-cols-5 gap-6 p-4 mx-auto">
+  <!-- First Row -->
+  <div class="md:col-span-3 flex flex-col md:flex-row items-center bg-gray-100 p-4 rounded-lg shadow-lg">
+    <img src="/assets/img1.png" alt="Image 1" class="w-full md:w-1/3 h-48 object-cover rounded-md">
+    <div class="mt-4 md:mt-0 md:ml-4 ">
+      <h2 class="text-xl font-bold">Commercial</h2>
+      <p class="text-gray-700 mt-2">The barn house captivates with its blend of rustic charm and modern.</p>
+      <a href="#" class="text-blacky font-extrabold mt-4 inline-flex items-center">
+        View Details <i class=" bg-primary p-2 rounded-full fas fa-arrow-right ml-2"></i>
+      </a>
+    </div>
+  </div>
+  <div class="md:col-span-2 items-center bg-gray-100 p-4 rounded-lg shadow-lg">
+    <img src="/assets/img2.png" alt="Image 2" class="w-full h-48 object-cover rounded-md shadow-lg">
+  </div>
+
+  <!-- Second Row -->
+  <div class="md:col-span-1 items-center bg-gray-100 p-4 rounded-lg shadow-lg">
+    <img src="/assets/img3.png" alt="Image 3" class="w-full h-48 object-cover rounded-md shadow-lg">
+  </div>
+  <div class="md:col-span-2 flex flex-col md:flex-row items-center bg-gray-100 p-4 rounded-lg shadow-lg">
+    <img src="/assets/img4.png" alt="Image 4" class="w-full md:w-1/3 h-48 object-cover rounded-md">
+    <div class="mt-4 md:mt-0 md:ml-4">
+      <h2 class="text-xl font-bold">Residential</h2>
+      <p class="text-gray-700 mt-2">A modern design with a touch of elegance.</p>
+      <a href="#" class="text-blacky font-extrabold mt-4 inline-flex items-center">
+        View Details <i class=" bg-primary p-2 rounded-full fas fa-arrow-right ml-2"></i>
+      </a>
+    </div>
+  </div>
+  <div class="md:col-span-2 items-center bg-gray-100 p-4 rounded-lg shadow-lg">
+    <img src="/assets/img5.png" alt="Image 5" class="w-full h-48 object-cover rounded-md shadow-lg">
+  </div>
+</div>
+
+
+
+
+ <div>
+
+
+
+
+
+ </div>
+</section>
 <!-- page section -->
  <section>
 <div class="h-auto bg-[url('../assets/bg.jpg')] bg-cover bg-center ">
@@ -211,13 +290,13 @@ tailwind.config = {
 <!-- form div -->
  <div>
 
-  <form class=" grid-cols-1 space-y-6 lg:grid grid-cols-4 gap-4 p-6  rounded-lg shadow-md">
+  <form class=" grid-cols-1  lg:grid grid-cols-4 gap-4 p-6   rounded-lg shadow-md">
     <!-- Row 1 -->
-    <div class="col-span-2">
-        <input type="text" placeholder="First Name" class="input input-bordered w-full bg-white rounded-3xl" />
+    <div class="col-span-2 ">
+        <input type="text" placeholder="First Name" class="input input-bordered w-full bg-white  rounded-3xl" />
     </div>
     <div class="col-span-2">
-        <input type="text" placeholder="Last Name" class="input input-bordered w-full bg-white rounded-3xl" />
+        <input type="text" placeholder="Last Name" class="input input-bordered w-full  bg-white rounded-3xl " />
     </div>
 
     <!-- Row 2 -->
